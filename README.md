@@ -47,7 +47,7 @@ struct softwareEngineer{
 	int *webDeveloperBonus;
 	int *desktopDeveloperBonus;
 //	Using an array of integers
-	int recommendedAges[8] = {45, 46, 47, 48, 49, 50, 51, 52};
+	int recommendedAges[8] = {3, 9, 16, 28, 32, 50, 51, 52};
 //	Using floats
 	float mobileDeveloperTax = 60.04;
 	float webDeveloperTax = 45.87;
@@ -87,7 +87,7 @@ void displaySoftwareEngineers(){
 //creating a data file that returns a boolen
 bool createFile(){
 //	using an array of strings
-	string softwareEngineers[5] = {"Jane", "John", "Hellen", "Lawrence", "Matheo"};
+	string softwareEngineers[5] = {"Jane 601-789-2454", "John 258-943-2156", "Hellen 601-523-5202", "Lawrence 563-892-0921", "Matheo 789-253-4503"};
 	fstream fw;
 //	creating a text file
 	fw.open("engineers.txt", ios::out);
@@ -110,7 +110,7 @@ void readFile(){
 	fstream textFile;
 //	openning the text file
 	textFile.open("engineers.txt", ios::in);
-	cout << "List of Employes Names." << endl;
+	cout << "List of Employes Names and Phone Numbers." << endl;
 //	Printing data from a text file
 	if(textFile.is_open()){
 		string data;
@@ -232,6 +232,7 @@ int main() {
 	
    
 }
+
   ![2022-04-27 (2)](https://user-images.githubusercontent.com/97564399/165648085-5597b8b7-ed8e-4863-a2c4-a648ecbc1e38.png)
 ![2022-04-27 (3)](https://user-images.githubusercontent.com/97564399/165648107-d0b6a60c-598c-4aec-a121-19e031697036.png)
 ![2022-04-27 (4)](https://user-images.githubusercontent.com/97564399/165648127-1a1db902-4f88-4158-9fbc-a2c182b275cb.png)
